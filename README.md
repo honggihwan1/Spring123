@@ -8,13 +8,13 @@ IntelliJ - Spring Boot
 # Envirements
   ### 본 서비스 DB 정보<br>
 * MYSQL_ORIGIN_MYSQL_DB_NAME=mydb
-<br>
+
 * MYSQL_ORIGIN_MYSQL_USER=mumug
-<br>
+
 * MYSQL_ORIGIN_MYSQL_PASSWORD=mumug123!
-<br>
+
 * MYSQL_ORIGIN_MYSQL_HOST=localhost
-<br>
+
 * MYSQL_ORIGIN_MYSQL_PORT=3306
 
 # 주 사용 언어
