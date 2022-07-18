@@ -22,5 +22,8 @@ MYSQL_ORIGIN_MYSQL_PORT=3306
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=alswo1641)](https://github.com/alsow1641/github-readme-stats)
 
-
-* 
+# 사용된 기능 
+* MariaDB-HeidiSQL 툴을 이용해 mydb 생성
+* Api를 활용한 Crawling - melon/naverMovie
+* DB 데이터 삽입/출력
+* NaverApi 사용하여 블로그 검색
