@@ -1,0 +1,23 @@
+{{>layout/header}}
+    <div class="container">
+        <h2>메뉴 수정</h2>
+        <form>
+            <div class="form-group">
+                <label for="menu">메뉴 수정:</label>
+                <input type="text" class="form-control" id="menu" placeholder="메뉴 이름 입력" name="menu">
+            </div>
+            <div class="form-group">
+                <label for="price">가격 수정:</label>
+                <input type="number" class="form-control" id="price" placeholder="메뉴 가격 입력" name="price">
+            </div>
+            <div class="form-group">
+                <label for="img">이미지주소 수정:</label>
+                <input type="text" class="form-control" id="img" placeholder="이미지주소 입력" name="img">
+            </div>
+
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-save">메뉴 수정</button>
+        </form>
+    </div>
+
+{{>layout/footer}}
