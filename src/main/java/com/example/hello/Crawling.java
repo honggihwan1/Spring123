@@ -8,7 +8,6 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-
 public class Crawling {
 
     public static void getStockPriceList() {

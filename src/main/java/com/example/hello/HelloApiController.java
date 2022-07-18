@@ -33,7 +33,6 @@ public class HelloApiController {
     String home() {
         return "Hello World!";
     }
-
     @RequestMapping("/hellokr")
     String hello() {
         return "헬로 월드!";
@@ -45,13 +44,12 @@ public class HelloApiController {
     //    return new ResponseEntity<MenuVo>(menuService.save(menu), HttpStatus.OK);
     //}
     @PostMapping("/api/v1/insert")
-    public Long save(@RequestBody MenuVo menu) {
+    public Long save(@RequestBody MenuVo menu){
         return menuService.save(menu);
     }
-
     @Transactional(readOnly = true)
     @GetMapping("/api/v1/menulist")
-    public ResponseEntity<List<MenuVo>> getAllMenu() {
+    public ResponseEntity<List<MenuVo>> getAllMenu () {
         List<MenuVo> list = menuService.findAll();
         return new ResponseEntity<List<MenuVo>>(list, HttpStatus.OK);
     }
@@ -77,16 +75,15 @@ public class HelloApiController {
         String json = menuService.blogSearch(keyword);
         return new ResponseEntity<String>(json, HttpStatus.OK);
     }
-
-    @GetMapping("/api/v1/musiclist")
+    @GetMapping("/api/v1/melon")
     public ResponseEntity<List<MusicDto>> getMelonList() {
         List<MusicDto> list = musicService.getMelonMusicList();
         return new ResponseEntity<List<MusicDto>>(list, HttpStatus.OK);
     }
-
     @GetMapping("/api/v1/movie")
     public ResponseEntity<List<MovieDto>> getMoiveList() {
         List<MovieDto> list = movieService.getNaverMovieList();
         return new ResponseEntity<List<MovieDto>>(list, HttpStatus.OK);
     }
+
 }
