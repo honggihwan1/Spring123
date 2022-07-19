@@ -1,0 +1,131 @@
+/* 색상 변수로 var 이용 */
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --accent-color: #d49466;
+}
+/* 빈 공간 채우기 */
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.headerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 9px 12px;
+}
+
+.header_logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.header_logo i {
+    color: var(--background-color);
+}
+
+.header_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.header_menu li {
+    padding: 9px 12px;
+}
+
+.header_menu li:hover {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+.header_icons {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0%;
+}
+
+.header_icons li {
+    padding: 9px 12px;
+}
+
+.header_toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+/* 반응형 css */
+@media screen and (max-width: 760px) {
+
+    .headerbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 9px 24px;
+    }
+
+    .header_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header_toggleBtn {
+        display: block;
+    }
+
+    .header_menu.active,
+    .header_icons.active {
+        display: flex;
+    }
+
+}
+/* 바디 부분 그라디언트 */
+.section_body {
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(6,71,162,1) 10%, rgba(174,238,251,1) 90%, rgba(0,212,255,1) 90%);
+    height: 90vh;
+}
+
+.main {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: var(—text-color);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main p {
+    font-size: 20px;
+}
