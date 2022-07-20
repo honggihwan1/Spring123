@@ -1,42 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
-.container {
-  background-color: #232323;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-
-  svg {
-    max-width: 45rem;
-    width: 100%;
-    height: auto;
-    fill: none;
-    stroke: white;
-    stroke-width: 4;
-
-    tspan > tspan {
-      stroke-dasharray: 1500;
-      stroke-dashoffset: -1500;
-
-      @for $i from 1 through 15 {
-
-        &:nth-of-type(#{$i}) {
-          animation: draw 300ms #{$i * 150}ms forwards;
-        }
-
-      }
-
-    }
-
+section {
+    height: 100vh;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-}
+body,html{margin:0;padding:0;height:50%;}
+body{
 
-@keyframes draw {
-
-  100% {
-    stroke-dashoffset: 0;
-  }
-
+  background-size:cover;
+  font-family: 'Cabin Condensed', sans-serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
