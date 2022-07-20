@@ -1,45 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>스프링 부트 웹서비스</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <link rel="stylesheet" href="/css/main.css">
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/f354e58b6a.js" crossorigin="anonymous"></script>
-  <script src="/js/main.js defer"></script>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
-</head>
-<body>
-<nav class="headerbar">
-  <div class="header_logo">
-    <i class="fab fa-accusoft"></i>
-    <a href="/">Portpolio</a>
-  </div>
-  <ul class="header_menu">
-    <li><a href="/insert">메뉴넣기</a></li>
-    <li><a href="/see">메뉴보기</a></li>
-    <li><a href="/best">메뉴추천</a></li>
-    <li><a href="/blog">블로그 검색</a></li>
-    <li><a href="/blog">블로그 검색</a></li>
-    <li><a href="/movie">영화 추천</a></li>
-    <li><a href="/musiclist">노래 추천</a></li>
-  </ul>
-  <ul class="header_icons">
-    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-    <li><a href="https://github.com/alswo1641"><i class="fab fa-github"></i></a></li>
-  </ul>
-  </div>
-  <a class="header_toggleBtn">
-    <i class="fas fa-bars"></i>
-  </a>
-</nav>
+{{>layout/header}}
 <div class="container">
-  <main>
     <br>
     <h2>메뉴 입력</h2>
     <br>
+      <form>
     <div class="form-group">
       <label for="menu">메뉴 이름:</label>
       <input type="text" class="form-control" id="menu" placeholder="메뉴 이름 입력" name="menu">
@@ -60,12 +24,12 @@
           <br><br>
           <a href="/" role="button" class="w-100 btn btn-secondary">취소</a>
         </form>
-  </main>
 </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="form-validation.js"></script>
-    <script src="/js/insert.js"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="/js/insert.js"></script>
+</body>
 </html>
 
 

@@ -23,14 +23,6 @@ public class HelloController {
     public String insert(){
         return "insert";
     }
-    @GetMapping("/inser")
-    public String inser(){
-        return "insert";
-    }
-    @GetMapping("/start")
-    public String start(){
-        return "start";
-    }
 
     @PostMapping("/insert_proc")
     @ResponseBody
@@ -75,5 +67,3 @@ public class HelloController {
 
 
 }
-
-
