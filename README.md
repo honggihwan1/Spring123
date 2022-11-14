@@ -17,11 +17,6 @@ IntelliJ - Spring Boot
 
 * MYSQL_ORIGIN_MYSQL_PORT=3306
 
-# 주 사용 언어
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=alswo1641)](https://github.com/alswo1641/github-readme-stats)
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=alswo1641)](https://github.com/alsow1641/github-readme-stats)
-
 # 사용된 기능 
 * MariaDB-HeidiSQL 툴을 이용해 mydb 생성
 * Api를 활용한 Crawling - melon/naverMovie
